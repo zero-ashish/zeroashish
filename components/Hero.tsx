@@ -44,7 +44,7 @@ const PROFILE = {
   location: 'India',
   phone: '+91 8299690703',
   resumeLabel: 'Resume',
-  githubUsername: 'geekAshish',
+  githubUsername: 'zero-ashish',
 } as const
 
 function safeUrl(href: string) {
@@ -150,6 +150,20 @@ export default function Hero() {
   const socialCards = useMemo(
     () => [
       {
+        label: 'LinkedIn',
+        href: socials.linkedin,
+        icon: (
+          <Image
+            src={SOCIAL_ICONS.linkedin}
+            alt="LinkedIn"
+            width={24}
+            height={24}
+            sizes="24px"
+            className="h-6 w-6 object-contain"
+          />
+        ),
+      },
+      {
         label: 'X (formerly Twitter)',
         href: socials.x,
         icon: (
@@ -163,20 +177,6 @@ export default function Hero() {
           <Image
             src={SOCIAL_ICONS.github}
             alt="GitHub"
-            width={24}
-            height={24}
-            sizes="24px"
-            className="h-6 w-6 object-contain"
-          />
-        ),
-      },
-      {
-        label: 'LinkedIn',
-        href: socials.linkedin,
-        icon: (
-          <Image
-            src={SOCIAL_ICONS.linkedin}
-            alt="LinkedIn"
             width={24}
             height={24}
             sizes="24px"

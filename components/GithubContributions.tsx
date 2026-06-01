@@ -42,7 +42,7 @@ function formatDate(date: string) {
   )
 }
 
-export default function GithubContributions({ username = "geekAshish" }: { username: string }) {
+export default function GithubContributions({ username = "zero-ashish" }: { username: string }) {
   const [data, setData] = useState<ContributionsResponse | null>(null)
   const [error, setError] = useState<string | null>(null)
 
